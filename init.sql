@@ -11,4 +11,6 @@ CREATE TABLE IF NOT EXISTS users (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- 插入初始用户（姓名：杨婷，学号：2315302314）
+-- 注意：执行时请确保MySQL客户端使用utf8mb4编码
+-- mysql -u root --default-character-set=utf8mb4 user_db < init.sql
 INSERT INTO users(username, password) VALUES('杨婷', '2315302314');
